@@ -1,0 +1,173 @@
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.middle {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text2 {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 10px;
+  padding: 16px 32px;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.column {
+  float: left;
+  padding: 5px;
+}
+
+
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+h2,h1,h3{
+  color: aliceblue;
+}
+h3{text-align: center;
+font-size: 80px;
+font-style: italic;}
+img1{
+  width: 48px;
+  height: 48px;
+}
+
+.escudo{
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.botoiak{
+  text-align: center; 
+  
+}
+
+.button{
+  background-color: black;
+  border: 2px solid aliceblue;
+  text-align: center;
+  color: aliceblue;
+  font-size: 16px;
+  padding: 15px 32px;
+  margin-left: 1%;
+  margin-top: 12%;
+  
+}
+.botoi{
+  
+  background-color: black;
+  border: 2px solid aliceblue;
+  text-align: center;
+  color: aliceblue;
+  font-size: 16px;
+  padding: 15px 32px;
+  margin-left: 1%;
+  margin-top: 12%;
+}
+
+.botoia{
+  
+  background-color: black;
+  border: 2px solid aliceblue;
+  text-align: center;
+  color: aliceblue;
+  font-size: 16px;
+  padding: 15px 32px;
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+div.filmak{
+
+  background-color: rgb(90, 90, 90);
+  color: whitesmoke;
+  text-align: left;
+  border-radius: 5px;
+}
+
+div.filma{
+
+  background-color: grey;
+  color: whitesmoke;
+  text-align: left;
+  padding-left:15px;
+  margin: 5px;
+  margin-bottom: 10px;
+  border-left: 10px;
+  border-radius: 5px;
+  overflow:auto;
+}
+
+div.datuak{
+  float:right;
+  width:80%;
+}
+
+div.formularioa{
+  color: white;
+  float:left;
+  width:20%;
+  margin-left: 5%;
+}
+div.formularioa input{
+  align-items: center;
+  width: 100%;
+  clear: both;
+}
+
+img.karatula{
+  border-radius: 3px;
+  height: 280px;
+  width: 200px;
+  float:left;
+}
+#page-wrap{
+  margin: 2% auto; 
+  color: white;
+  text-align: right;
+}
+
+div.alokbai{
+  color: greenyellow;
+  font-weight: bold;
+}
+
+div.alokez{
+  color:red;
+  font-weight: bold;
+}

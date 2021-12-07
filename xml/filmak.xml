@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filmak SYSTEM "filmak.dtd">
+<filmak>
+<filma id="b5" alokagarri="true">
+<data>1985</data>
+<izena>Ehun metro</izena>
+<zuzendaria>Alfonso Ungria</zuzendaria>
+<iruzkina>Gazte bat Donostiako kaleetan barna doa lasterka, polizia atzetik duela.</iruzkina>
+<balorazioa>5.9</balorazioa>
+<karatula>https://ellaberintomagico.files.wordpress.com/2013/11/3a18b-0035901yf2.jpg</karatula>
+</filma>
+<filma id="c5" alokagarri="false">
+<data>1985</data>
+<izena>Kalabaza Tripontzia</izena>
+<zuzendaria>Juan Bautista Berasategi</zuzendaria>
+<iruzkina>Espazioa zeharkatzen duen hezur-haragizko satelite batek Kalabaza magikoaren mundua erakusten digu. Kalabaza magikoan astoak eta behiak ere hitz egiteko gai dira Kukubiltxok laguntza ematen dielako. Kukubiltxo hain da txikia intxaur oskol batean sartzen dela. Hala ere, Tartalo izaki handi eta iletsua da, begi bakarra duena.</iruzkina>
+<balorazioa>7</balorazioa>
+<karatula>https://cloud10.todocoleccion.online/cine-folletos-mano/tc/2018/12/07/12/142859742.jpg</karatula>
+</filma>
+<filma id="c4" alokagarri="true">
+<data>2000</data>
+<izena>Kiriku eta Sorgina</izena>
+<zuzendaria>Michel Ocelot</zuzendaria>
+<iruzkina>Karaba sorginak suntsitutako Afrikako herrixka batean, gaiztakeria bat zabaldu eta, dioenez, herriko biztanleak jan dituen herri batean, Kirikou jaiotzen da. Haur ausartak sorginari aurre egitea erabakitzen du bere jendea salbatzeko, baina indarkeriaren ordez maltzurkeria eta jakintza erabiltzea erabakitzen du.</iruzkina>
+<balorazioa>6.9</balorazioa>
+<karatula>https://cloud10.todocoleccion.online/cine-folletos-mano/tc/2012/06/21/32250132.jpg</karatula>
+</filma>
+<filma id="b4" alokagarri="false">
+<data>1987</data>
+<izena>Full Metal Jacket</izena>
+<zuzendaria>Stanley Kubrick</zuzendaria>
+<iruzkina>Marineen patruila bat uharte batera iritsi da eta Vietnamen borrokatzeko trebakuntza gogorra jaso du. Jarraibide hori, fisikoa ez ezik, psikologikoa ere izango •da.</iruzkina>
+<balorazioa>8.3</balorazioa>
+<karatula>https://www.movienco.co.uk/carteles/5300/5374/001.jpg</karatula>
+</filma>
+</filmak>
