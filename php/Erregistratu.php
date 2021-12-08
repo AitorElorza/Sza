@@ -15,7 +15,7 @@
         <?php
             if(isset($_POST['erabiltzailea']) && isset($_POST['eposta']) && isset($_POST['pasahitza']) && isset($_POST['pasahitza2'])){
                 $erabiltzailea = $_POST['erabiltzailea'];
-                if(preg_match("/^[a-zA-Z]{1,}@[a-zA-Z]{1,}\.[a-zA-Z]{1,}$/", $_POST['eposta'])){
+                /*if(preg_match("/^[a-zA-Z]{1,}@[a-zA-Z]{1,}\.[a-zA-Z]{1,}$/", $_POST['eposta'])){
                     $eposta = $_POST['eposta'];
                 }else{
                     echo "Eposta ez da zuzena";
@@ -27,7 +27,9 @@
                 else{
                     echo 'Pasahitzak ez dira berdinak!';
                 }
-                echo "ongietorri";
+                echo "ongietorri";*/
+                $eposta = $_POST['eposta'];
+                $pasahitza = $_POST['pasahitza'];
                 //xmlan gorde erabiltzailea
                 $fitxategia = "../xml/erabiltzaileak.xml";
                 $xml = simplexml_load_file($fitxategia);
