@@ -22,6 +22,9 @@
                               echo(' - ' . $filma->data.'</div>');
                               if ($filma['alokagarri']=="true"){
                                 echo('<div class="alokbai">Alokagarri</div>');
+								if($_SESSION['erabiltzailea']!=""){
+									echo('<button class="botoia">alokatu</button>');
+								}
                               }
                               elseif ($filma['alokagarri']=="false"){
                                 echo('<div class="alokez">Ez alokagarri</div>');
