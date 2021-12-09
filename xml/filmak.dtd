@@ -9,4 +9,4 @@
 <!ELEMENT zuzendaria (#PCDATA)>
 <!ELEMENT iruzkina (#PCDATA)>
 <!ELEMENT balorazioa (#PCDATA)>
-<!ELEMENT balorazioa (#PCDATA)>
+<!ELEMENT karatula (#PCDATA)>
