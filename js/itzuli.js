@@ -4,7 +4,7 @@ function itzuli(id){
         type: 'POST',
         data: {id: id},
         success: function(data){
-            //alert(data);
+           
             window.location.reload();
         }
         

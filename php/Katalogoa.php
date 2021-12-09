@@ -17,45 +17,47 @@
 	<body style="background-color: rgb(51, 50, 50);">
 		<?php include '../php/Menu.php' ?>
 		<?php 
-						$filmak = simplexml_load_file('../xml/filmak.xml');
-                        echo('<div class="filmak">');
-						foreach($filmak-> filma as $filma){
-							  echo('<div class="filma" id='.$filma["id"].'>');
-                              echo('<img class="karatula" src="' . $filma->karatula . '"alt="'.$filma->izena.'">');
-                              echo('<div class="datuak">');
-							  echo('<p class="izenburua">' .$filma->izena . '</p>');
-                              echo('<div class="goiburua"><div class="zuzendari">' . $filma->zuzendaria);
-                              echo(' - ' . $filma->data.'</div>');
-                              if ($filma['alokagarri']=="true"){
-                                echo('<div class="alokbai">Alokagarri</div>');
-								if(isset($_SESSION['erabiltzailea'])){
-									if($_SESSION['erabiltzailea']!=""){
-										$lag1= "'".$filma["id"]."'";
-										$lag2= "'".$_SESSION["eposta"]."'";
-										echo('<button class="botoia" onclick="alokatu('.$lag1.','.$lag2.');">alokatu</button>');
-									}
-								}
-								
-                              }
-                              elseif ($filma['alokagarri']=="false"){
-                                echo('<div class="alokez">Ez alokagarri</div>');
-								if(isset($_SESSION['eposta'])){
-									if($_SESSION['eposta']==(string)$filma['alokatzaile']){
-										$lag1= "'".$filma["id"]."'";
-										echo('<button class="botoia" onclick="itzuli('.$lag1.');">itzuli</button>');
-										
-									}
-								}
+			$filmak = simplexml_load_file('../xml/filmak.xml');
+            echo('<div class="filmak">');
+			foreach($filmak-> filma as $filma){
+				echo('<div class="filma" id='.$filma["id"].'>');
+                echo('<img class="karatula" src="' . $filma->karatula . '"alt="'.$filma->izena.'">');
+                echo('<div class="datuak">');
+				echo('<p class="izenburua">' .$filma->izena . '</p>');
+                echo('<div class="goiburua"><div class="zuzendari">' . $filma->zuzendaria);
+                echo(' - ' . $filma->data.'</div>');
+                if ($filma['alokagarri']=="true"){
+                    echo('<div class="alokbai">Alokagarri</div>');
+					if(isset($_SESSION['erabiltzailea'])){
+						if($_SESSION['erabiltzailea']!=""){//erabiltzailea logeatuta badago alokatzeko aukera eman
+							//aldagaiak behar diren moduan sartzeko laguntza kakotsen arazoak saihesteko
+							$lag1= "'".$filma["id"]."'";
+							$lag2= "'".$_SESSION["eposta"]."'";
+							echo('<button class="botoia" onclick="alokatu('.$lag1.','.$lag2.');">alokatu</button>');
+						}
+					}
+							
+                }
+                elseif ($filma['alokagarri']=="false"){
+                    echo('<div class="alokez">Ez alokagarri</div>');
+					if(isset($_SESSION['eposta'])){
+						if($_SESSION['eposta']==(string)$filma['alokatzaile']){//bermatu ikusten ari den erabiltzaileak filma alokatu duela
+							//aldagai laguntzailea kakotsen arazoa saihesteko
+							$lag1= "'".$filma["id"]."'";
+							echo('<button class="botoia" onclick="itzuli('.$lag1.');">itzuli</button>');//filma itzultzeko botoia
+									
+							}
+						}
 
-                              }
-                              echo('</div>');
-							  echo('<p>' . $filma->iruzkina . '</p>');
-							  echo('<p class="nota">Nota:' . $filma->balorazioa . '/10</p>');
-                              echo('</div>');
-							  echo('</div>');
-							  }
-                        echo('</div>');
-				  ?>
+                }
+                echo('</div>');
+				echo('<p>' . $filma->iruzkina . '</p>');
+				echo('<p class="nota">Nota:' . $filma->balorazioa . '/10</p>');
+                echo('</div>');
+				echo('</div>');
+			}
+            echo('</div>');
+		?>
 		
 	</body>
 </html>

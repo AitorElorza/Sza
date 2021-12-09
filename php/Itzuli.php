@@ -7,11 +7,11 @@ if(isset($_POST['id'])){
     foreach($alokairua->filma as $film){
         if($film->attributes()->id==$id){
             
-            //$film->alokatu=$user;
+            
             $film->attributes()->alokagarri="true";
             $film->attributes()->alokatzaile="";
             $alokairua->asXML("../xml/filmak.xml");
-            //echo "Alokatu zaio";
+           
         }
     }
     

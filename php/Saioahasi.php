@@ -33,7 +33,8 @@
                     if((string)$erabiltzailea->eposta == $datuak['eposta'] && (string)$erabiltzailea->pasahitza == $datuak['pasahitza']){
                         session_start();
                         $_SESSION['erabiltzailea'] = (string)$erabiltzailea->erabiltzailea;
-                        $_SESSION['eposta'] = (string)$erabiltzailea->eposta;
+                        $_SESSION['eposta'] = (string)$erabiltzailea->eposta;//alokatzeko eposta bidez gordetzen da
+                        //automatikoki katalogora bidali
                         echo'<script type="text/javascript">
                         alert("Ongi etorri");
                         window.location.href="../php/Katalogoa.php";
