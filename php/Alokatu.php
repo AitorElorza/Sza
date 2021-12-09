@@ -9,6 +9,7 @@ if(isset($_POST['id']) && isset($_POST['user'])){
             
             //$film->alokatu=$user;
             $film->attributes()->alokagarri="false";
+            $film->attributes()->alokatzaile=$user;
             $alokairua->asXML("../xml/filmak.xml");
             //echo "Alokatu zaio";
         }

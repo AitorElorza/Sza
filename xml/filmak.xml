@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE filmak SYSTEM "filmak.dtd">
 <filmak>
-<filma id="b5" alokagarri="false">
+<filma id="b5" alokagarri="false" alokatzaile="aelorza@ikasle.es">
 <data>1985</data>
 <izena>Ehun metro</izena>
 <zuzendaria>Alfonso Ungria</zuzendaria>
@@ -9,7 +9,7 @@
 <balorazioa>5.9</balorazioa>
 <karatula>https://ellaberintomagico.files.wordpress.com/2013/11/3a18b-0035901yf2.jpg</karatula>
 </filma>
-<filma id="c5" alokagarri="true">
+<filma id="c5" alokagarri="true" alokatzaile="">
 <data>1985</data>
 <izena>Kalabaza Tripontzia</izena>
 <zuzendaria>Juan Bautista Berasategi</zuzendaria>
@@ -17,7 +17,7 @@
 <balorazioa>7</balorazioa>
 <karatula>https://cloud10.todocoleccion.online/cine-folletos-mano/tc/2018/12/07/12/142859742.jpg</karatula>
 </filma>
-<filma id="c4" alokagarri="true">
+<filma id="c4" alokagarri="true" alokatzaile="">
 <data>2000</data>
 <izena>Kiriku eta Sorgina</izena>
 <zuzendaria>Michel Ocelot</zuzendaria>
@@ -25,7 +25,7 @@
 <balorazioa>6.9</balorazioa>
 <karatula>https://cloud10.todocoleccion.online/cine-folletos-mano/tc/2012/06/21/32250132.jpg</karatula>
 </filma>
-<filma id="b4" alokagarri="true">
+<filma id="b4" alokagarri="true" alokatzaile="">
 <data>1987</data>
 <izena>Full Metal Jacket</izena>
 <zuzendaria>Stanley Kubrick</zuzendaria>
