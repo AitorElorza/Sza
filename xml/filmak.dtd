@@ -3,10 +3,11 @@
 <!ELEMENT film (data, izena,zuzendaria,iruzkina,balorazioa,karatula)>
 <!ATTLIST film
     id ID #REQUIRED
-    eskuragarri (true|false) “true”>
+    eskuragarri (true|false) “true”
+    erab CDATA "">
 <!ELEMENT data (#PCDATA)>
 <!ELEMENT izena (#PCDATA)>
 <!ELEMENT zuzendaria (#PCDATA)>
 <!ELEMENT iruzkina (#PCDATA)>
 <!ELEMENT balorazioa (#PCDATA)>
-<!ELEMENT balorazioa (#PCDATA)>
+<!ELEMENT karatula (#PCDATA)>

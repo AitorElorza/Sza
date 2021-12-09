@@ -30,7 +30,7 @@
         echo '<span class="right"><a href="../php/Irten.php"><button class="botoia">Amaitu Saioa</button></a></span> &nbsp;';
         echo $_SESSION['erabiltzailea'].'&nbsp;';
     }else{
-    echo '<span class="right">User</span>';
+    echo '<span class="right">Gonbidatua</span>';
 }
 
     ?>
