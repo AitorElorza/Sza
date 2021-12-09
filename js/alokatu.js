@@ -4,7 +4,8 @@ function alokatu(id,user){
         type: 'POST',
         data: {id: id, user: user},
         success: function(data){
-            echo(data);
+            alert(data);
+            window.location.reload();
         }
         
     });
