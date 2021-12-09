@@ -1,8 +1,8 @@
-function alokatu(id,user){
+function itzuli(id){
     $.ajax({
-        url: '../php/Alokatu.php',
+        url: '../php/Itzuli.php',
         type: 'POST',
-        data: {id: id, user: user},
+        data: {id: id},
         success: function(data){
             //alert(data);
             window.location.reload();

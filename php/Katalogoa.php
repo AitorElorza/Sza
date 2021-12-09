@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href = ../css/estiloak.css?v="<?php echo time(); ?>">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="../js/alokatu.js"></script> 
+		<script src="../js/itzuli.js"></script> 
 		<script> function arp(){
 			alert("Hau proba bat da");
 		}</script> 
@@ -38,6 +39,14 @@
                               }
                               elseif ($filma['alokagarri']=="false"){
                                 echo('<div class="alokez">Ez alokagarri</div>');
+								if(isset($_SESSION['eposta'])){
+									if($_SESSION['eposta']==(string)$filma['alokatzaile']){
+										$lag1= "'".$filma["id"]."'";
+										echo('<button class="botoia" onclick="itzuli('.$lag1.');">itzuli</button>');
+										
+									}
+								}
+
                               }
                               echo('</div>');
 							  echo('<p>' . $filma->iruzkina . '</p>');
